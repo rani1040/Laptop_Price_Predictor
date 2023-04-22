@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Define the background image */
+    body {
+      background-image: url('/static/lp_1.jpg'); /* Replace 'your-image-url.jpg' with the URL or file path of your desired image */
+      background-size: cover;
+      background-position: center;
+    }
+
+    /* Define the style for the text overlay */
+    .text-overlay {
+      position: absolute;
+      top: 50%; /* Adjust the positioning of the text vertically */
+      left: 50%; /* Adjust the positioning of the text horizontally */
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #FFFFFF; /* Set the text color */
+      font-size: 24px; /* Set the text size */
+      font-family: Arial, sans-serif; /* Set the font family */
+      text-shadow: 0 0 5px rgba(0, 0, 0, 0.7); /* Add a text shadow for better readability */
+    }
+  </style>
+</head>
+<body>
+  <div class="text-overlay">
+      <h1>Submit Page</h1>
+       <p>Predicted Price: {{ predicted_price }}</p>
+  </div>
+</body>
+</html>

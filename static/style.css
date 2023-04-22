@@ -1,0 +1,119 @@
+nav{
+    position: fixed;
+    top: 0; /* this is so that upper space can be filled up*/
+    left: 0;
+    width: 100%;
+    background-color : #2A2F4F;
+    /* Set the background color of the navigation bar */
+}
+nav ul {
+  margin: 0; /* Remove the default margin of the unordered list */
+  padding: 0; /* Remove the default padding of the unordered list */
+  list-style: none; /* Remove the bullet points from the unordered list */
+  display: flex; /* Use flexbox to align the list items horizontally */
+}
+
+nav li{
+  margin-right: 10px; /* Add a margin to the right of each list item */
+}
+
+nav a {
+  display: block; /* Display the links as blocks to fill the list items */
+  color: #fff; /* Set the color of the links to white */
+  padding: 30px; /* Add some padding around the links */
+  text-decoration: none; /* Remove the underline from the links */
+}
+
+nav a:hover {
+  background-color: #917FB3; /* Change the background color of the links on hover */
+}
+
+header {
+  margin-bottom: 50px;
+}
+
+/* Set some default styles for body and main container */
+body {
+    font-family: 'Crimson Text', serif;
+    font-family: 'Itim', cursive;
+    font-family: 'Mukta', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+    font-family: 'Ysabeau', sans-serif;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color:#E5BEEC;
+}
+
+.container .form-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px; /* You can adjust the height as needed */
+  font-size:25px;
+  font-family: 'Itim', cursive;
+}
+.form-header{
+  margin-bottom: 15px;
+}
+
+
+/* Styles for the form */
+
+.form-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.form-group{
+  display: block;
+  align:center;
+  margin-bottom:17px;
+}
+
+.form-group label{
+     font-weight: lighter;
+     font-size:20px;
+     font-family: 'Varela Round', sans-serif;
+}
+
+
+.form-input {
+  width: 100%;
+  padding: 5px; /* input box width*/
+  margin-top: 0.1rem;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Styles for the submit button */
+.form-group  button{
+  display:block;
+  width: 200px;
+  margin-top: 60px;
+  margin-left: auto; /* Add auto margin to the left */
+  margin-right: auto; /* Add auto margin to the right */
+  padding: 20px 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+.form-submit:hover {
+  background-color: #3e8e41;
+}
+
+/* Styles for the footer */
+.footer {
+  background-color: #2A2F4F;
+  color:white;
+  padding: 20px;
+  text-align: center;
+ }
+
+
+
+

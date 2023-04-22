@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../static/style.css">
+     <!-- Add the Bootstrap CSS link here -->
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a> </li>
+				<li><a href="#">About</a> </li>
+			</ul>
+		</nav>
+	</header>
+
+	 <main>
+         <div class="container">
+             <div class="form-header">
+                 <h2>Laptop Price Predictor</h2>
+             </div>
+             <div class="form-container">
+                  <div class="form-content">
+                      <form action="/submit" method="POST">
+                          <div class="form-group">
+                               <label for="manufacturer" class="form-label">Manufacturer :</label><br>
+                                  <select id ="manufacturer" name="Manufacturer" class="form-input">
+                                      {% for option in manufacturers %}
+                                        <option value="{{ option }}">{{ option }}</option>
+                                      {% endfor %}
+                                  </select>
+                          </div>
+
+                          <div class="form-group">
+                               <label for="model_name" class="form-label">Model Name :</label><br>
+                                  <select id ="model_name" name="Model Name" class="form-input">
+                                      {% for option in model_names %}
+                                        <option value="{{ option }}">{{ option }}</option>
+                                      {% endfor %}
+                                  </select>
+                          </div>
+
+
+                          <div class="form-group">
+                               <label for="category" class="form-label">Category :</label><br>
+                                  <select id ="category" name="Category" class="form-input">
+                                      {% for option in category %}
+                                        <option value="{{ option }}">{{ option }}</option>
+                                      {% endfor %}
+                                  </select>
+                          </div>
+
+
+                          <div class="form-group">
+
+                                <label for="screen_size" class="form-label">Screen Size:</label><br>
+                                  <select id ="screen_size" name="Screen Size" class="form-input">
+                                      {% for option in screen_size %}
+                                        <option value="{{ option }}">{{ option }}</option>
+                                      {% endfor %}
+                                  </select>
+
+                          </div>
+
+
+                          <div class="form-group">
+                                  <label for="cpu" class="form-label">CPU :</label><br>
+                                      <select id ="cpu" name="CPU" class="form-input">
+                                          {% for option in cpu %}
+                                            <option value="{{ option }}">{{ option }}</option>
+                                          {% endfor %}
+                                      </select><br>
+                          </div>
+
+
+                          <div class="form-group">
+                                   <label for="ram" class="form-label">RAM:</label><br>
+                      <select id ="ram" name="RAM" class="form-input">
+                          {% for option in ram %}
+                            <option value="{{ option }}">{{ option }}</option>
+                          {% endfor %}
+                      </select><br>
+                          </div>
+
+
+                          <div class="form-group">
+                                <label for="storage" class="form-label">Storage:</label><br>
+                      <select id ="storage" name=" Storage" class="form-input">
+                          {% for option in storage %}
+                            <option value="{{ option }}">{{ option }}</option>
+                          {% endfor %}
+                      </select><br>
+                          </div>
+
+
+
+                          <div class="form-group">
+                                <label for="gpu" class="form-label">GPU:</label><br>
+                      <select id ="gpu" name="GPU" class="form-input">
+                          {% for option in gpu %}
+                            <option value="{{ option }}">{{ option }}</option>
+                          {% endfor %}
+                      </select><br>
+
+                          </div>
+
+
+                          <div class="form-group">
+                              <label for="operating_system" class="form-label">Operating System:</label><br>
+                      <select id ="operating_system" name="Operating System" class="form-input">
+                          {% for option in os %}
+                            <option value="{{ option }}">{{ option }}</option>
+                          {% endfor %}
+                      </select><br>
+                          </div>
+
+
+                          <div class="form-group">
+                                   <label for="operating_system_ver" class="form-label">Operating System:</label><br>
+                      <select id ="operating_system_ver" name="Operating System Version" class="form-input">
+                          {% for option in os_ver %}
+                            <option value="{{ option }}">{{ option }}</option>
+                          {% endfor %}
+                      </select><br>
+
+                          </div>
+
+
+                          <div class="form-group">
+
+                      <label for="weight" class="form-label">Weight:</label><br>
+                      <select id ="weight" name="Weight" class="form-input">
+                          {% for option in weight %}
+                            <option value="{{ option }}">{{ option }}</option>
+                          {% endfor %}
+                      </select><br>
+                          </div>
+
+
+
+                          <div class="form-group">
+                                <label for="resolution" class="form-label">Resolution:</label><br>
+                  <select id ="resolution" name="resolution" class="form-input">
+                      {% for option in resolution %}
+                        <option value="{{ option }}">{{ option }}</option>
+                      {% endfor %}
+                  </select><br>
+                          </div>
+
+                           <div class="form-group">
+
+                 <label for="touchscreen" class="form-label">Touch Screen:</label><br>
+                  <select id ="touchscreen" name="touchscreen" class="form-input">
+                      {% for option in touchscreen %}
+                        <option value="{{ option }}">{{ option }}</option>
+                      {% endfor %}
+                  </select><br>
+                          </div>
+
+                           <div class="form-group">
+                                 <label for="screentype" class="form-label">Screen Type:</label><br>
+                  <select id ="screentype" name="Screen Type" class="form-input">
+                      {% for option in screen_type %}
+                        <option value="{{ option }}">{{ option }}</option>
+                      {% endfor %}
+                  </select><br>
+                          </div>
+
+                           <div class="form-group">
+                                  <button type="submit" class="form-submit">Submit</button>
+                          </div>
+
+                      </form>
+                  </div>
+             </div>
+
+         </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2023  Laptop Price Predictor. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
